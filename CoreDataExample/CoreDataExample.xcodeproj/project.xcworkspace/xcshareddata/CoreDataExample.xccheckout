@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EC3C20F7-F500-4B59-B8E4-A581C69DB571</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoreDataExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2F6E4DBEAE36AB0B6F4952F74D409E680351B159</key>
+		<string>github.com:TeamMaestro/cocoaheads-kalamazoo-2013.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios/CoreDataExample/CoreDataExample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2F6E4DBEAE36AB0B6F4952F74D409E680351B159</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:TeamMaestro/cocoaheads-kalamazoo-2013.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2F6E4DBEAE36AB0B6F4952F74D409E680351B159</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2F6E4DBEAE36AB0B6F4952F74D409E680351B159</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cocoaheads-kalamazoo-2013</string>
+		</dict>
+	</array>
+</dict>
+</plist>

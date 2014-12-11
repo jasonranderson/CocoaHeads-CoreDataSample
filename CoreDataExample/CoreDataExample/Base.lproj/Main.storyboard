@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rKN-27-Tdg">
+                                <rect key="frame" x="16" y="20" width="568" height="535"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="TD9-uo-H6g" style="IBUITableViewCellStyleDefault" id="YaL-5s-9On">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YaL-5s-9On" id="A4q-R8-EzY">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TD9-uo-H6g">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="eDO-7o-46I"/>
+                                </connections>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0pd-1s-NsT">
+                                <rect key="frame" x="16" y="556" width="568" height="44"/>
+                                <items>
+                                    <barButtonItem title="Add" id="EKd-VK-xaT">
+                                        <connections>
+                                            <action selector="_addWord:" destination="vXZ-lx-hvc" id="kM0-G5-l7l"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="twz-E1-hdo"/>
+                                    <barButtonItem title="Del First" id="6lT-lv-eTE">
+                                        <connections>
+                                            <action selector="_deleteFirstWord:" destination="vXZ-lx-hvc" id="VPy-gY-PH1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Gua-1S-Doo"/>
+                                    <barButtonItem title="Del All" id="9wh-wa-5E2">
+                                        <connections>
+                                            <action selector="_deleteAllWords:" destination="vXZ-lx-hvc" id="gqf-B9-KHa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0pd-1s-NsT" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="BLZ-Hc-9bc"/>
+                            <constraint firstItem="rKN-27-Tdg" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="20" id="I0d-Qt-Ayl"/>
+                            <constraint firstItem="rKN-27-Tdg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="dQX-tW-b2z"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="rKN-27-Tdg" secondAttribute="bottom" constant="45" id="ffU-vQ-cxt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rKN-27-Tdg" secondAttribute="trailing" id="n6u-JA-Lno"/>
+                            <constraint firstItem="0pd-1s-NsT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="v8E-DZ-rTD"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0pd-1s-NsT" secondAttribute="bottom" id="zoP-kn-pxn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="EKd-VK-xaT" id="HK3-EV-E0o"/>
+                        <outlet property="deleteAllButton" destination="9wh-wa-5E2" id="GmB-PL-D6T"/>
+                        <outlet property="deleteFirstButton" destination="6lT-lv-eTE" id="WFJ-eU-Hwk"/>
+                        <outlet property="tableView" destination="rKN-27-Tdg" id="4Th-5f-EMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
